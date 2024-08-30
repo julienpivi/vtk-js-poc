@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.xrButton {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 200px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.sessionButton {
+    position: absolute;
+    left: 220px;
+    top: 10px;
+    width: 200px;
+    z-index: 2;
+    cursor: pointer;
+}

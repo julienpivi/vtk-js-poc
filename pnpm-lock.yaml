@@ -11,6 +11,12 @@ importers:
       '@kitware/vtk.js':
         specifier: ^31.0.0
         version: 31.0.0(@babel/preset-env@7.24.7(@babel/core@7.24.7))(autoprefixer@10.4.19(postcss@8.4.39))(webpack@5.92.1)(wslink@2.1.1)
+      '@lookingglass/webxr':
+        specifier: ^0.6.0
+        version: 0.6.0
+      gl-matrix:
+        specifier: ^3.4.3
+        version: 3.4.3
     devDependencies:
       vite:
         specifier: ^5.3.1
@@ -772,6 +778,12 @@ packages:
       autoprefixer: ^10.4.7
       wslink: '>=1.1.0 || ^2.0.0'
 
+  '@lookingglass/webxr-polyfill@0.1.1':
+    resolution: {integrity: sha512-xrsJ8zhBAgE1EglLgbiVX3Z9q0mib/EYBCl31KCXTt7zyCmCSj9PgQ7apqFZBfXbbEEoP7LDBsTWNqzNphczew==}
+
+  '@lookingglass/webxr@0.6.0':
+    resolution: {integrity: sha512-BLfVOQiINLdC/o53OsXeFhIvK44HIe0pQOUGph7EV3JjHmawuMBO1UwtTIHxemsPar9knCKAilCxKkRAjG1YMw==}
+
   '@msgpack/msgpack@2.8.0':
     resolution: {integrity: sha512-h9u4u/jiIRKbq25PM+zymTyW6bhTzELvOoUd+AvYriWOAKpLGnIamaET3pnHYoI5iYphAHBI4ayx0MehR+VVPQ==}
     engines: {node: '>= 10'}
@@ -1024,6 +1036,12 @@ packages:
   caniuse-lite@1.0.30001640:
     resolution: {integrity: sha512-lA4VMpW0PSUrFnkmVuEKBUovSWKhj7puyCg8StBChgu298N1AtuF1sKWEvfDuimSEDbhlb/KqPKC3fs1HbuQUA==}
 
+  cardboard-vr-display@1.0.19:
+    resolution: {integrity: sha512-+MjcnWKAkb95p68elqZLDPzoiF/dGncQilLGvPBM5ZorABp/ao3lCs7nnRcYBckmuNkg1V/5rdGDKoUaCVsHzQ==}
+
+  cbor-js@0.1.0:
+    resolution: {integrity: sha512-7sQ/TvDZPl7csT1Sif9G0+MA0I0JOVah8+wWlJVQdVEgIbCzlN/ab3x+uvMNsc34TUvO6osQTAmB2ls80JX6tw==}
+
   chalk@2.4.2:
     resolution: {integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==}
     engines: {node: '>=4'}
@@ -1205,8 +1223,14 @@ packages:
     resolution: {integrity: sha512-5uYhsJH8VJBTv7oslg4BznJYhDoRI6waYCxMmCdnTrcCrHA/fCFKoTFz2JKKE0HdDFUF7/oQuhzumXJK7paBRQ==}
     engines: {node: '>= 0.4'}
 
+  gl-matrix@2.8.1:
+    resolution: {integrity: sha512-0YCjVpE3pS5XWlN3J4X7AiAx65+nqAI54LndtVFnQZB6G/FVLkZH8y8V6R3cIoOQR4pUdfwQGd1iwyoXHJ4Qfw==}
+
   gl-matrix@3.4.3:
     resolution: {integrity: sha512-wcCp8vu8FT22BnvKVPjXa/ICBWRq/zjFfdofZy1WSpQZpphblv12/bOQLBC1rMM7SGOFS9ltVmKOHil5+Ml7gA==}
+
+  gl-preserve-state@1.0.0:
+    resolution: {integrity: sha512-zQZ25l3haD4hvgJZ6C9+s0ebdkW9y+7U2qxvGu1uWOJh8a4RU+jURIKEQhf8elIlFpMH6CrAY2tH0mYrRjet3Q==}
 
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
@@ -1255,6 +1279,9 @@ packages:
   hasown@2.0.2:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
+
+  holoplay-core@0.0.11:
+    resolution: {integrity: sha512-uDbAqWYP5S7BR13ZILX20Lc+xbcRwSznXXBksZAkuwuf+tqsXJBBugwWbiNRV10wEOyGfHun44/l56KW2++FKw==}
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
@@ -1385,6 +1412,9 @@ packages:
   normalize-range@0.1.2:
     resolution: {integrity: sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA==}
     engines: {node: '>=0.10.0'}
+
+  nosleep.js@0.7.0:
+    resolution: {integrity: sha512-Z4B1HgvzR+en62ghwZf6BwAR6x4/pjezsiMcbF9KMLh7xoscpoYhaSXfY3lLkqC68AtW+/qLJ1lzvBIj0FGaTA==}
 
   object-keys@1.1.1:
     resolution: {integrity: sha512-NuAESUOUMrlIXOfHKzD6bpPu3tYt3xvjNdRIQ+FeT0lNb4K8WR70CaDxhuNguS2XG+GjkyMwOzsN5ZktImfhLA==}
@@ -1645,6 +1675,9 @@ packages:
       webpack-cli:
         optional: true
 
+  webvr-polyfill-dpdb@1.0.18:
+    resolution: {integrity: sha512-O0S1ZGEWyPvyZEkS2VbyV7mtir/NM9MNK3EuhbHPoJ8EHTky2pTXehjIl+IiDPr+Lldgx129QGt3NGly7rwRPw==}
+
   webworker-promise@0.5.0:
     resolution: {integrity: sha512-14iR79jHAV7ozwvbfif+3wCaApT3I1g8Lo0rJZrwAu6wxZGx/08Y8KXz6as6ZLNUEEufeiEBBYrqyDBClXOsEw==}
 
@@ -1656,6 +1689,18 @@ packages:
 
   wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
+
+  ws@7.5.10:
+    resolution: {integrity: sha512-+dbF1tHwZpXcbOJdVOkzLDxZP1ailvSxM6ZweXTegylPny803bFhA+vqBYw4s31NSAk4S2Qz+AKXK9a4wkdjcQ==}
+    engines: {node: '>=8.3.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: ^5.0.2
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
 
   wslink@2.1.1:
     resolution: {integrity: sha512-vy31Rqo4gQk8pKpm5ltL1i67qoYnH/HGmCyw15lDYzWaB7btqttsl5qQQZQVAP8arJ0ZXJQkrFwzeSNu+yHPpA==}
@@ -2561,6 +2606,20 @@ snapshots:
     transitivePeerDependencies:
       - webpack
 
+  '@lookingglass/webxr-polyfill@0.1.1':
+    dependencies:
+      cardboard-vr-display: 1.0.19
+      gl-matrix: 2.8.1
+
+  '@lookingglass/webxr@0.6.0':
+    dependencies:
+      '@lookingglass/webxr-polyfill': 0.1.1
+      gl-matrix: 2.8.1
+      holoplay-core: 0.0.11
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+
   '@msgpack/msgpack@2.8.0': {}
 
   '@nodelib/fs.scandir@2.1.5':
@@ -2823,6 +2882,14 @@ snapshots:
 
   caniuse-lite@1.0.30001640: {}
 
+  cardboard-vr-display@1.0.19:
+    dependencies:
+      gl-preserve-state: 1.0.0
+      nosleep.js: 0.7.0
+      webvr-polyfill-dpdb: 1.0.18
+
+  cbor-js@0.1.0: {}
+
   chalk@2.4.2:
     dependencies:
       ansi-styles: 3.2.1
@@ -3000,7 +3067,11 @@ snapshots:
       has-symbols: 1.0.3
       hasown: 2.0.2
 
+  gl-matrix@2.8.1: {}
+
   gl-matrix@3.4.3: {}
+
+  gl-preserve-state@1.0.0: {}
 
   glob-parent@5.1.2:
     dependencies:
@@ -3044,6 +3115,14 @@ snapshots:
   hasown@2.0.2:
     dependencies:
       function-bind: 1.1.2
+
+  holoplay-core@0.0.11:
+    dependencies:
+      cbor-js: 0.1.0
+      ws: 7.5.10
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
 
   inflight@1.0.6:
     dependencies:
@@ -3149,6 +3228,8 @@ snapshots:
   node-releases@2.0.14: {}
 
   normalize-range@0.1.2: {}
+
+  nosleep.js@0.7.0: {}
 
   object-keys@1.1.1: {}
 
@@ -3418,6 +3499,8 @@ snapshots:
       - esbuild
       - uglify-js
 
+  webvr-polyfill-dpdb@1.0.18: {}
+
   webworker-promise@0.5.0: {}
 
   worker-loader@3.0.8(webpack@5.92.1):
@@ -3427,6 +3510,8 @@ snapshots:
       webpack: 5.92.1
 
   wrappy@1.0.2: {}
+
+  ws@7.5.10: {}
 
   wslink@2.1.1:
     dependencies:
